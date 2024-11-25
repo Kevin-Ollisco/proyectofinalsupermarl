@@ -1,0 +1,215 @@
+nav {
+    /* Usa flexbox para alinear los botones */
+display: flex;                       /* Usamos flexbox */         /* Centra verticalmente */
+margin: auto;                        /* Espacio alrededor del contenedor */
+flex-wrap: wrap;    
+background-color: #1a1a1a;
+}
+body{
+
+margin: 0;
+height: 100%;
+padding: 0;
+background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+background-image: url('/image/fondo_inicio.jpg'); /* Cambiar aquí si es necesario */
+/* ajusta la imagen al fondo  */
+background-size: cover;     
+background-position: center; /* Cambiado a center para centrar la imagen */
+
+}
+
+.botones-medio{
+display: flex;
+        /* Usa flexbox para los botones */
+justify-content: center;              /* Centra todos los botones en el medio */
+width: 100%;                                                            
+margin-bottom: 20px;
+
+}
+
+
+.btn{
+
+display: flex;
+justify-content: center;  /* Centra el contenido horizontalmente */
+align-items: center;      /* Centra el contenido verticalmente */
+padding: 10px 20px;       /* Añade un poco de espacio dentro del botón*/
+background-color: #ffffff;
+margin-left: 0;        
+color: rgb(12, 12, 12);             /* Color del texto */
+font-size: 18px;          /* Tamaño del texto */
+border: none;             /* Sin bordes */
+cursor: pointer;          /* Cambia el cursor al pasar por encima */
+width: 250px;          /* Todos los botones tendrán 150px de ancho */
+height: 70px;          /* Todos los botones tendrán 50px de alto */
+border-radius: 20px;    
+
+
+}
+
+.btn1, .admin-button {
+    display:flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.btn1:hover{
+    /* background-color: #45a049; Color al hacer hover */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.btn1 i, .admin-button i {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+.btn1 span, .admin-button span {
+    font-size: 0.8rem;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+nav button {
+    padding: 10px;
+    background-color: #f14415;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.conteiner-cars {
+    margin-top: 30px;
+    background-color: #f9f9f99b;
+    padding: 1%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el carrito */
+#cart-items, #cart-items1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cart-item span {
+    font-size: 16px;
+}
+
+.cart-item .name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#cart-items1 {
+    margin-top: 20px;
+    left: 70PX;
+    height: 70px;
+    
+}
+
+#total-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para los productos */
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes del producto */
+.product-image {
+    width: 120px;  /* Puedes ajustar el tamaño de la imagen */
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Estilos para el botón de eliminar */
+.delete-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Estilos para el botón de limpiar carrito */
+#clear-cart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#clear-cart-btn:hover {
+    background-color: darkred;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuarios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="userl.css">
+</head>
+<body>
+
+    <nav>
+        <div class="botones-medio">
+          <button class="btn1" aria-label="Home"><i class="fas fa-home" onclick="location.href='index.html'"></i> <span>Inicio</span></button>
+          <button class="btn1" aria-label="User" id="userButton" onclick="location.href='userl.html'">
+              <i class="fas fa-user"></i><samp>usuario</samp>
+            </button>
+          <button  class="btn1"aria-label="Calendar"><i class="fas fa-calendar" onclick="location.href='catalogo.html'"></i><span>catalogo</span></button>
+          <button  class="btn1"aria-label="Shopping Cart"><i class="fas fa-shopping-cart" onclick="location.href='carito.html'"></i><samp>compras</samp></button>
+          <button  class="btn1" aria-label="Close" id="closeBtn"  onclick="location.href='loginCliente.html'"><i class="fas fa-times"></i><samp>cerrar</samp></button>
+        </div>
+          <!-- <button  class="btn2" aria-label="Close" id="closeBtn"><i class="fas fa-times"></i><samp>cerrar</samp></button> -->
+          
+         
+      </nav>
+
+      <h1>Lista de Usuarios</h1>
+      <input type="text" id="search-input" placeholder="Buscar usuario por nombre..." class="search-bar">
+      <button class="btn" id="loginButton" onclick="location.href='REGISTRAR2.HTML'">REGISTRAR NUEVO Usuario</button>
+      <main>
+          <div id="user-container" class="user-container">
+              <!-- Los usuarios se generarán dinámicamente con JavaScript -->
+          </div>
+      </main>
+      <!-- <footer>
+          <p>© 2024 Kevin Jose Ollisco Claure</p>
+      </footer> -->
+  
+      <!-- Formulario para editar usuarios -->
+      <div id="edit-form-container" style="display: none;">
+          <form id="edit-form" class="user-card">
+              <h2>Editar Usuario</h2>
+              <input type="hidden" id="edit-id">
+              <div>
+                  <label for="edit-name">Nombre:</label>
+                  <input type="text" id="edit-name" required>
+              </div>
+              <div>
+                  <label for="edit-email">Correo:</label>
+                  <input type="email" id="edit-email" required>
+              </div>
+              <div>
+                  <label for="edit-role">Rol:</label>
+                  <input type="text" id="edit-role" required>
+              </div>
+              <button type="submit">Guardar</button>
+              <button type="button" onclick="closeEditForm()">Cancelar</button>
+          </form>
+      </div>
+
+
+    <script src="userl.js"></script>
+</body>
+</html>

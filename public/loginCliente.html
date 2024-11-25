@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style_loginCliente.css">
+</head>
+<body>
+    <nav>
+        <button class="nav-button" aria-label="/public/index.html">
+            <i class="fas fa-home" onclick="location.href='index.html'"></i>
+            <span>Inicio</span>
+        </button>
+        <button class="nav-button" aria-label="Catálogo">
+            <i class="fas fa-calendar" onclick="location.href='catalogo.html'"></i>
+            <span>Catálogo</span>
+        </button>
+        <button class="nav-button" aria-label="Compras">
+            <i class="fas fa-shopping-cart" onclick="location.href='compras.html'"></i>
+            <span>Compras</span>
+        </button>
+    </nav>
+    
+    <main>
+        <form id="login-form">
+            <h1>INICIAR SESIÓN</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">COMENZAR</button>
+            <p>REGISTRARSE <a href="registrar.html">AHORA</a></p>
+        </form>
+    </main>
+
+    <footer>
+        <button class="admin-button" aria-label="Administrador"  onclick="location.href='secionAdministrador.html'">
+            <i class="fas fa-user-cog"  ></i>
+            <span>Administrador</span>
+        </button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

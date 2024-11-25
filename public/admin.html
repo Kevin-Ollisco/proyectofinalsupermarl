@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+      
+        <nav>
+          <div class="botones-medio">
+            <button class="btn1" aria-label="Home"><i class="fas fa-home" onclick="location.href='index.html'"></i> <span>Inicio</span></button>
+            <button class="btn1" aria-label="User" id="userButton" onclick="location.href='userl.html'">
+                <i class="fas fa-user"></i><samp>usuario</samp>
+              </button>
+            <button  class="btn1"aria-label="Calendar"><i class="fas fa-calendar" onclick="location.href='catalogo.html'"></i><span>catalogo</span></button>
+            <button  class="btn1"aria-label="Shopping Cart"><i class="fas fa-shopping-cart" onclick="location.href='carito.html'"></i><samp>compras</samp></button>
+            <button  class="btn1" aria-label="Close" id="closeBtn"  onclick="location.href='loginCliente.html'"><i class="fas fa-times"></i><samp>cerrar</samp></button>
+          </div>
+            <!-- <button  class="btn2" aria-label="Close" id="closeBtn"><i class="fas fa-times"></i><samp>cerrar</samp></button> -->
+            
+           
+        </nav>
+        <main>
+   
+         <div class="botnes">
+      
+             <button class="btn"  onclick="showCategory('arte')">
+                Arte & Diseño <img class="acrilex"   src='/image/acrilex.png' alt="1"> <img class="pincel" src='/image/pincel.jpg' alt="1"> 
+             </button>
+             <button class="btn"  onclick="showCategory('dibujo')">
+                Dibujo & Escritura  <img class="acrilex"   src='/image/acrilex.png' alt="1"><img class="pincel" src='/image/pincel.jpg' alt="1">
+             </button>
+             <button class="btn" onclick="showCategory('escolar')">
+                Escolar <img class="acrilex"   src='/image/acrilex.png' alt="1"><img class="pincel" src='/image/pincel.jpg' alt="1">
+             </button>
+             <button class="btn"  onclick="showCategory('papeleria')">
+                Papeleria <img class="acrilex"   src='/image/acrilex.png' alt="1"><img class="pincel" src='/image/pincel.jpg' alt="1">
+             </button>
+         </div>    
+      <DIV>      <!-- Categoría Arte -->
+                      <!-- Categoría Arte -->
+          <div id="arte" class="category-content">
+              <div class="search-container">
+                  <i class="fas fa-search search-icon"></i>
+                  <input type="text" class="search-input" placeholder="Buscar..." id="searchInput" oninput="searchItems('arte')">
+              </div>
+              <h2>ARTE & DISEÑO</h2>
+              <div class="items">
+                  <div class="item">
+                      <img src="/image/acrilex.png" alt="Pintura Acrílica" class="product-image">
+                      <h3>Pintura Acrílica</h3>
+                      <p>Precio: $10.00</p>
+                      <input type="number" value="1" min="1" class="quantity-input">
+                      <button onclick="addToCart('Pintura Acrílica', 10, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                  </div>
+          
+                  <div class="item">
+                      <img src="/image/pincel.jpg" alt="Lienzo para pintar" class="product-image">
+                      <h3>Lienzo para pintar</h3>
+                      <p>Precio: $15.00</p>
+                      <input type="number" value="1" min="1" class="quantity-input">
+                      <button onclick="addToCart('Lienzo para pintar', 15, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                  </div>
+                  <div class="item">
+                    <img src="/image/pincel.jpg" alt="Lienzo para pintar" class="product-image">
+                    <h3>Lienzo para pintar</h3>
+                    <p>Precio: $15.00</p>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button onclick="addToCart('Lienzo para pintar', 15, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <img src="/image/pincel.jpg" alt="Lienzo para pintar" class="product-image">
+                    <h3>Lienzo para pintar</h3>
+                    <p>Precio: $15.00</p>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button onclick="addToCart('Lienzo para pintar', 15, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                </div>
+                <div class="item">
+                    <img src="/image/pincel.jpg" alt="Lienzo para pintar" class="product-image">
+                    <h3>Lienzo para pintar</h3>
+                    <p>Precio: $15.00</p>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                    <button onclick="addToCart('Lienzo para pintar', 15, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                </div>
+          
+                  <!-- Repetir para otros productos con el mismo cambio -->
+              </div>
+          </div>
+          
+          <!-- Categoría Dibujo -->
+          <div id="dibujo" class="category-content">
+              <div class="search-container">
+                  <i class="fas fa-search search-icon"></i>
+                  <input type="text" class="search-input" placeholder="Buscar..." id="searchInput" oninput="searchItems('dibujo')">
+              </div>
+              <h2>DIBUJO & ESCRITURA</h2>
+              <div class="items">
+                  <div class="item">
+                      <img src="/image/acrilex.png" alt="Pintura Acrílica" class="product-image">
+                      <h3>Pintura Acrílica</h3>
+                      <p>Precio: $10.00</p>
+                      <input type="number" value="1" min="1" class="quantity-input">
+                      <button onclick="addToCart('Pintura Acrílica', 10, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                  </div>
+          
+                  <div class="item">
+                      <img src="/image/pincel.jpg" alt="Lienzo para pintar" class="product-image">
+                      <h3>Lienzo para pintar</h3>
+                      <p>Precio: $15.00</p>
+                      <input type="number" value="1" min="1" class="quantity-input">
+                      <button onclick="addToCart('Lienzo para pintar', 15, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                  </div>
+          
+                  <!-- Repetir para otros productos con el mismo cambio -->
+              </div>
+          </div>
+          
+          <!-- Categoría Escolar -->
+          <div id="escolar" class="category-content">
+              <div class="search-container">
+                  <i class="fas fa-search search-icon"></i>
+                  <input type="text" class="search-input" placeholder="Buscar..." id="searchInput">
+              </div>
+              <h2>ESCOLAR</h2>
+              <div class="items">
+                  <div class="item">
+                      <img src="/image/acrilex.png" alt="Pintura Acrílica" class="product-image">
+                      <h3>Pintura Acrílica</h3>
+                      <p>Precio: $10.00</p>
+                      <input type="number" value="1" min="1" class="quantity-input">
+                      <button onclick="addToCart('Pintura Acrílica', 10, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                  </div>
+          
+                  <div class="item">
+                      <img src="/image/pincel.jpg" alt="Lienzo para pintar" class="product-image">
+                      <h3>Lienzo para pintar</h3>
+                      <p>Precio: $15.00</p>
+                      <input type="number" value="1" min="1" class="quantity-input">
+                      <button onclick="addToCart('Lienzo para pintar', 15, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                  </div>
+          
+                  <!-- Repetir para otros productos con el mismo cambio -->
+              </div>
+          </div>
+          
+          <!-- Categoría Papelería -->
+          <div id="papeleria" class="category-content">
+              <div class="search-container">
+                  <i class="fas fa-search search-icon"></i>
+                  <input type="text" class="search-input" placeholder="Buscar..." id="searchInput">
+              </div>
+              <h2>PAPELERÍA</h2>
+              <div class="items">
+                  <div class="item">
+                      <img src="/image/acrilex.png" alt="Pintura Acrílica" class="product-image">
+                      <h3>Pintura Acrílica</h3>
+                      <p>Precio: $10.00</p>
+                      <input type="number" value="1" min="1" class="quantity-input">
+                      <button onclick="addToCart('Pintura Acrílica', 10, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                  </div>
+          
+                  <div class="item">
+                      <img src="/image/pincel.jpg" alt="Lienzo para pintar" class="product-image">
+                      <h3>Lienzo para pintar</h3>
+                      <p>Precio: $15.00</p>
+                      <input type="number" value="1" min="1" class="quantity-input">
+                      <button onclick="addToCart('Lienzo para pintar', 15, this.parentElement.querySelector('.product-image').src)">Agregar al carrito</button>
+                  </div>
+          
+                  <!-- Repetir para otros productos con el mismo cambio -->
+              </div>
+          </div>
+          
+               <!-- Categoría Arte -->
+           
+        </main>
+
+       
+    </DIv>
+    </div>
+    <script src="script.js"></script> 
+
+</body>
+</html>

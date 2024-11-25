@@ -1,0 +1,106 @@
+nav {
+    /* Usa flexbox para alinear los botones */
+display: flex;                       /* Usamos flexbox */
+     /* Centra verticalmente */
+margin: 20px;                        /* Espacio alrededor del contenedor */
+flex-wrap: wrap;    
+
+
+
+}
+
+body{
+    
+margin: 0;
+height: 100%;
+padding: 0;
+background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+background-image: url('/image/fondo_inicio.jpg'); /* Cambiar aquí si es necesario */
+/* ajusta la imagen al fondo  */
+background-size: cover;     
+background-position: center; /* Cambiado a center para centrar la imagen */
+
+}
+.btn1, .admin-button {
+    display:flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.btn1:hover{
+    /* background-color: #45a049; Color al hacer hover */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.btn1 i, .admin-button i {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+.btn1 span, .admin-button span {
+    font-size: 0.8rem;
+}
+.botones-medio{
+
+    display: flex;
+     padding-top: 3%;                     /* Usa flexbox para los botones */
+    justify-content: center;              /* Centra todos los botones en el medio */
+    width: 100%;        
+    /* el margen que tenfra todo el boton                                                      */
+    margin-bottom: 10px;
+    
+ }
+ .Buscar {
+    font-family: Arial, sans-serif;
+    
+    justify-content: center;
+    align-items: center;
+   
+    margin: 0px 90px;
+    background-color: #f4f4f4;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.search-icon {
+    color: #040404;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    width: 250px;
+}
+
+.search-input:focus {
+    border-color: #4CAF50;
+}
+.titulo{
+    
+    color: #000000;
+    font-weight: 800;
+
+}
+

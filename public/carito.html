@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="botones-medio">
+                <button class="btn1" aria-label="Home"><i class="fas fa-home" onclick="location.href='index.html'"></i> <span>Inicio</span></button>
+                <button class="btn1" aria-label="User" id="userButton" onclick="location.href='userl.html'">
+                    <i class="fas fa-user"></i><span>usuario</span>
+                </button>
+                <button class="btn1" aria-label="Catalogo" onclick="location.href='catalogo.html'">
+                    <i class="fas fa-calendar"></i><span>Catálogo</span>
+                </button>
+                <button class="btn1" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i><span>Compras</span>
+                </button>
+                <button class="btn1" aria-label="Cerrar" id="closeBtn" onclick="location.href='loginCliente.html'">
+                    <i class="fas fa-times"></i><span>Cerrar</span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="conteiner-cars">
+            <h1>Tu Carrito de Compras</h1>
+
+            <!-- Mostrar productos del carrito -->
+            <div id="cart-items">
+                <h2>Productos</h2>
+                <!-- Los productos se insertarán aquí con JavaScript -->
+            </div>
+            <div id="cart-items">
+              <!-- Aquí se mostrarán los productos del carrito -->
+          </div>
+
+            <!-- Mostrar precios y cantidades -->
+            <div id="cart-items-details">
+                <!-- Aquí se mostrarán los precios y cantidad -->
+            </div>
+
+            <!-- Mostrar el total del carrito -->
+            <div id="total-price">
+                <!-- El precio total se insertará aquí -->
+            </div>
+            <button id="clear-cart-btn">Limpiar carrito</button>
+            <!-- Volver al catálogo -->
+            <button onclick="location.href='catalogo.html'">Volver al Catálogo</button>
+            <button onclick="location.href='PAYPAL.html'">PAGAR CON PayPal</button>
+           
+            
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style_secionCliente.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <button aria-label="Home"><i class="fas fa-home"></i></button>
+            <button aria-label="User"><i class="fas fa-user"></i></button>
+            <button aria-label="Calendar"><i class="fas fa-calendar"></i></button>
+            <button aria-label="Shopping Cart"><i class="fas fa-shopping-cart"></i></button>
+            <button aria-label="Close" id="closeBtn"><i class="fas fa-times"></i></button>
+        </nav>
+        <main>
+            <div class="profile-card">
+                <div class="profile-picture-container">
+                    <img id="profilePicture" src="default-avatar.png" alt="Profile Picture" class="profile-picture">
+                    <label for="imageUpload" class="image-upload-label">
+                        <i class="fas fa-camera"></i>
+                        <span class="sr-only">Upload new profile picture</span>
+                    </label>
+                    <input type="file" id="imageUpload" accept="image/*" class="sr-only">
+                </div>
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="accountName">Nombre Cuenta:</label>
+                        <input type="text" id="accountName" name="accountName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <button type="submit" id="saveBtn">GUARDAR</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

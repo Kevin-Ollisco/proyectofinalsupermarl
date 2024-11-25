@@ -1,0 +1,201 @@
+nav {
+    /* Usa flexbox para alinear los botones */
+display: flex;                       /* Usamos flexbox */         /* Centra verticalmente */
+margin: auto;                        /* Espacio alrededor del contenedor */
+flex-wrap: wrap;    
+background-color: #1a1a1a;
+}
+body{
+
+margin: 0;
+height: 100%;
+padding: 0;
+background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+background-image: url('/image/fondo_inicio.jpg'); /* Cambiar aquí si es necesario */
+/* ajusta la imagen al fondo  */
+background-size: cover;     
+background-position: center; /* Cambiado a center para centrar la imagen */
+
+}
+
+.botones-medio{
+display: flex;
+        /* Usa flexbox para los botones */
+justify-content: center;              /* Centra todos los botones en el medio */
+width: 100%;                                                            
+margin-bottom: 20px;
+
+}
+
+
+.btn{
+
+display: flex;
+justify-content: center;  /* Centra el contenido horizontalmente */
+align-items: center;      /* Centra el contenido verticalmente */
+padding: 10px 20px;       /* Añade un poco de espacio dentro del botón*/
+background-color: #ffffff;
+margin-left: 0;        
+color: rgb(12, 12, 12);             /* Color del texto */
+font-size: 18px;          /* Tamaño del texto */
+border: none;             /* Sin bordes */
+cursor: pointer;          /* Cambia el cursor al pasar por encima */
+width: 250px;          /* Todos los botones tendrán 150px de ancho */
+height: 70px;          /* Todos los botones tendrán 50px de alto */
+border-radius: 20px;    
+
+
+}
+
+.btn1, .admin-button {
+    display:flex;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.btn1:hover{
+    /* background-color: #45a049; Color al hacer hover */
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.btn1 i, .admin-button i {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+.btn1 span, .admin-button span {
+    font-size: 0.8rem;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+nav button {
+    padding: 10px;
+    background-color: #f14415;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre los cuadros */
+    justify-content: center;
+    padding: 20px;
+}
+
+.user-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-card img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ 
+    object-fit: cover;
+    margin-bottom: 15px;
+    color: #f71515;
+}
+
+.user-card .user-data {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.user-card button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-card button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#edit-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#edit-form label {
+    font-weight: bold;
+}
+.search-bar {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+h1{
+    color: #ddd;
+}
+
+.btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 1%;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}

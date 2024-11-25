@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="catalogo.css">
+    <title>Catálogo</title>
+    <style>
+        /* Estilo para el contenedor de la página */
+        body {
+            margin: 0;
+            height: 100%;
+            padding: 0;
+            background-attachment: fixed;
+            background-image: url('/image/fondo_inicio.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor de los botones de navegación */
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Estilo para los botones del menú */
+        .botones-medio {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        /* Botones dentro de la navegación */
+        .btn1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+            flex-direction: column;
+        }
+
+        .btn1:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn1 i {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        /* Botones de las categorías */
+        .botnes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            margin-left: 0;
+        }
+
+        /* Botones de las categorías */
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: rgb(12, 12, 12);
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            width: 250px;
+            height: 70px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .acrilex,
+        .pincel {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        /* Estilo para las imágenes de las categorías */
+        .pincel {
+            margin-right: -30%;
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+        }
+
+        /* Contenido de las categorías */
+        .category-content {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Cuando se activa una categoría, se muestra */
+        .category-content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Menú de navegación -->
+        <nav>
+            <div class="botones-medio">
+                <button class="btn1" onclick="showCategory('inicio')"><i class="fas fa-home"></i> <span>Inicio</span></button>
+                <button class="btn1" onclick="showCategory('usuario')"><i class="fas fa-user"></i><span>Usuario</span></button>
+                <button class="btn1" onclick="showCategory('catalogo')"><i class="fas fa-calendar"></i><span>Catálogo</span></button>
+                <button class="btn1" onclick="showCategory('compras')"><i class="fas fa-shopping-cart"></i><span>Compras</span></button>
+                <button class="btn1" onclick="hideMenu()"><i class="fas fa-times"></i><span>Cerrar</span></button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main id="content">
+            <div class="botnes">
+                <button class="btn" onclick="showCategory('arte')">Arte & Diseño</button>
+                <button class="btn" onclick="showCategory('dibujo')">Dibujo & Escritura</button>
+                <button class="btn" onclick="showCategory('escolar')">Escolar</button>
+                <button class="btn" onclick="showCategory('papeleria')">Papelería</button>
+            </div>
+
+            <!-- Categoría Arte -->
+            <div id="arte" class="category-content">
+                <h2>Arte & Diseño</h2>
+                <p>Contenido de Arte & Diseño...</p>
+            </div>
+
+            <!-- Categoría Dibujo -->
+            <div id="dibujo" class="category-content">
+                <h2>Dibujo & Escritura</h2>
+                <p>Contenido de Dibujo & Escritura...</p>
+            </div>
+
+            <!-- Categoría Escolar -->
+            <div id="escolar" class="category-content">
+                <h2>Escolar</h2>
+                <p>Contenido de Escolar...</p>
+            </div>
+
+            <!-- Categoría Papelería -->
+            <div id="papeleria" class="category-content">
+                <h2>Papelería</h2>
+                <p>Contenido de Papelería...</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Función para mostrar la categoría seleccionada
+        function showCategory(category) {
+            // Ocultar todas las categorías
+            const allCategories = document.querySelectorAll('.category-content');
+            allCategories.forEach(function (categoryDiv) {
+                categoryDiv.classList.remove('active');
+            });
+
+            // Mostrar la categoría seleccionada
+            const categoryContent = document.getElementById(category);
+            if (categoryContent) {
+                categoryContent.classList.add('active');
+            }
+        }
+
+        // Función para ocultar el menú
+        function hideMenu() {
+            const nav = document.querySelector('nav');
+            nav.style.display = 'none'; // Aquí ocultas el menú de navegación si lo deseas
+        }
+    </script>
+
+</body>
+
+</html>
