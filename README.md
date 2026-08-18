@@ -1,12 +1,12 @@
 # 🛒 Proyecto Final - Sistema de Supermercado
 
-Sistema web para la gestión de un supermercado, desarrollado como proyecto final de [nombre de tu curso/materia]. Permite [describe brevemente qué hace: gestionar productos, ventas, inventario, clientes, etc. — completa según tu proyecto].
+Sistema web para la gestión de un supermercado, desarrollado como proyecto final de [nombre de tu curso/materia]. Permite [describe brevemente qué hace: gestionar productos, ventas, inventario, clientes].
 
 
 ## 🛠️ Tecnologías utilizadas
 
 - **Backend:** Node.js, Express.js
-- **Frontend:** HTML, CSS, JavaScript [ajusta si usaste algún framework]
+- **Frontend:** HTML, CSS, JavaScript 
 - **Base de datos:** [MongoDB / MySQL / la que hayas usado]
 - **Arquitectura:** MVC (Modelo - Vista - Controlador)
 
@@ -55,8 +55,7 @@ proyectofinalsupermarl/
 Estudiante de Ingeniería de Sistemas | Técnico Medio en Sistemas Computacionales
 
 - GitHub: [@Kevin-Ollisco](https://github.com/Kevin-Ollisco)
-- LinkedIn: [agrega tu enlace]
-- Correo: [agrega tu correo]
+
 
 ## 📄 Licencia
 
